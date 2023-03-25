@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 import { Col, Row, Button, FormGroup, Input } from "reactstrap";
+import './login.css'
 
 const initialUser = { email: "", password: "", username: "" };
 const Registration = () => {
@@ -39,43 +40,43 @@ const Registration = () => {
   };
 
   return (
-    <Row className="register">
-      <Col sm="12" md={{ size: 4, offset: 4 }}>
-        <div>
-          <h2>Sign up:</h2>
-          <FormGroup>
-            <Input
+    <div className="registerpage">
+        <div className="loginform">
+        
+          <h2>SIGN UP</h2>
+
+            <input
               type="text"
               name="username"
               value={user.username}
               onChange={handleUserChange}
               placeholder="Enter your full name"
             />
-          </FormGroup>
-          <FormGroup>
-            <Input
+ 
+
+            <input
               type="email"
               name="email"
               value={user.email}
               onChange={handleUserChange}
               placeholder="Enter your email"
             />
-          </FormGroup>
-          <FormGroup>
-            <Input
+ 
+
+            <input
               type="password"
               name="password"
               value={user.password}
               onChange={handleUserChange}
               placeholder="Enter password"
             />
-          </FormGroup>
+
           <Button color="primary" onClick={signUp}>
             Sign up
           </Button>
+        
         </div>
-      </Col>
-    </Row>
+    </div>
   );
 };
 
