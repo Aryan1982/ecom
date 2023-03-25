@@ -4,6 +4,7 @@ import axios from "axios";
 import { toast } from "react-toastify";
 import { Link, useNavigate } from "react-router-dom";
 import { storeUser } from "../helpers";
+import './login.css'
 
 const initialUser = { password: "", identifier: "" };
 
@@ -41,37 +42,34 @@ const Login = () => {
   };
 
   return (
-    <Row className="login">
-      <Col sm="12" md={{ size: 4, offset: 4 }}>
-        <div>
-          <h2>Login:</h2>
-          <FormGroup>
-            <Input
+    <div className="loginpage">     
+        <div className="loginform">
+          <h2>LOGIN</h2>
+         
+            <input
               type="email"
               name="identifier"
               value={user.identifier}
               onChange={handleChange}
               placeholder="Enter your email"
             />
-          </FormGroup>
-          <FormGroup>
-            <Input
+          
+            <input
               type="password"
               name="password"
               value={user.password}
               onChange={handleChange}
               placeholder="Enter password"
             />
-          </FormGroup>
-          <Button color="primary" onClick={handleLogin}>
+        
+          <Button onClick={handleLogin}>
             Login
           </Button>
           <h6>
             Click <Link to="/register">Here</Link> to sign up
           </h6>
         </div>
-      </Col>
-    </Row>
+    </div>
   );
 };
 
