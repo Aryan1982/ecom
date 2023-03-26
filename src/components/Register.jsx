@@ -1,6 +1,6 @@
 import axios from "axios";
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 import { Col, Row, Button, FormGroup, Input } from "reactstrap";
 import './login.css'
@@ -71,10 +71,12 @@ const Registration = () => {
               placeholder="Enter password"
             />
 
-          <Button color="primary" onClick={signUp}>
+          <Button onClick={signUp}>
             Sign up
           </Button>
-        
+          <h6>
+            Click <Link to="/login">Here</Link> to login
+          </h6>
         </div>
     </div>
   );

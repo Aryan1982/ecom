@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+.loginpage,.registerpage{
+	font-family: poppins;
+	height: 100vh;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background:#f4f4f4;
+}
+
+.loginform{
+	width: 300px;
+	background-color:#ff9a23;
+	height: 345px;
+	padding: 15px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	border-radius: 20px;
+	box-shadow: 0 15px 30px 5px rgb(0, 0, 0, 0.3);
+
+/*	flex-direction: row;*/
+}
+
+.loginform h2{
+	border-top-right-radius:20px ;
+	border-top-left-radius:20px ;
+	position: relative;
+    top: -28px;
+    background: #1A1C20;
+    width: 111%;
+    text-align: center;
+    height: 74px;
+    padding: 20px;
+    color: white;
+    font-family: poppins;
+    font-weight: 500;
+}
+
+.loginform input{
+/*	background: #F0A500;*/ 
+	border: none;
+    border-bottom: 2px solid #1A1C20;
+    width: 216px;
+    height: 37px;
+    margin-bottom: 21px;
+    background: transparent;
+    font-weight: 400;
+    font-size: 1rem;
+/*    border-radius: 6px;*/
+/*    padding: 2px;*/
+/*    color:white;*/
+}
+
+.loginform textarea:focus,.loginform input:focus {
+  outline:none;
+}
+
+.loginform Button{
+	background: #212121;
+/*	color:black;*/
+	font-family: poppins;
+	margin-top: 10px;
+    margin-bottom: 19px;
+    width: 114px;
+    transition: 0.5s;
+}
+
+.loginform Button:hover{
+	transition:0.5s ;
+
+}
