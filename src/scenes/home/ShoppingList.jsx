@@ -7,6 +7,7 @@ import { Typography } from "@mui/material";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import { useDispatch, useSelector } from "react-redux";
 import { setItems } from "../../state";
+import './Home.css'
 
 const ShoppingList = () => {
   const dispatch = useDispatch();
@@ -71,18 +72,19 @@ const ShoppingList = () => {
         justifyContent="space-around"
         rowGap="20px"
         columnGap="1.33%"
+        
       >
         {value === "all" &&
           items.map((item) => (
-            <Item item={item} key={`${item.name}-${item.id}`} />
+            <Item className="items" item={item} key={`${item.name}-${item.id}`} />
           ))}
         {value === "buy" &&
           buy.map((item) => (
-            <Item item={item} key={`${item.name}-${item.id}`} />
+            <Item className="items" item={item} key={`${item.name}-${item.id}`} />
           ))}
         {value === "rent" &&
           rent.map((item) => (
-            <Item item={item} key={`${item.name}-${item.id}`} />
+            <Item className="items" item={item} key={`${item.name}-${item.id}`} />
           ))}
       </Box>
     </Box>

@@ -3,14 +3,14 @@ import Subscribe from "./Subscribe";
 import MainCarousel from "./MainCarousel";
 import Navbar from "../global/Navbar";
 import Footer from "../global/Footer";
-
+import './Home.css'
 function Home() {
   return (
     <div className="home">
       <Navbar/>
       <MainCarousel />
       <ShoppingList />
-      {/* <Subscribe /> */}
+       <Subscribe /> 
       <Footer/>
     </div>
   );

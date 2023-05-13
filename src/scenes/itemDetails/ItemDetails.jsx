@@ -67,6 +67,7 @@ const ItemDetails = () => {
             height="100%"
             src={"/"}
             style={{ objectFit: "contain" }}
+            className="items"
           />
         </Box>
 
@@ -103,7 +104,7 @@ const ItemDetails = () => {
             </Box>
             <Button
               sx={{
-                backgroundColor: "#222222",
+                backgroundColor: "#212121",
                 color: "white",
                 borderRadius: 0,
                 minWidth: "150px",
